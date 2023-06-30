@@ -1,0 +1,62 @@
+@import "../../BaseStyles/base";
+
+.footer {
+    width: 100vw;
+    height: 30vh;
+    background-color: $color1;
+    color: $color3;
+    scroll-snap-align: start;
+    text-align: center;
+    font-size: 1.1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.253);
+    position: relative;
+
+    @include devices(dekstop) {
+        height: 35vh;
+        padding-bottom: 8em;
+        font-size: 1.2em;
+    }
+
+    .footer-menu {
+        display: flex;
+        width: 80vw;
+        justify-content: space-evenly;
+        margin: 1em auto;
+
+        a {
+            text-decoration: none;
+            color: $color3;
+        }
+
+        @include devices(dekstop) {
+            width: 50vw;
+            margin: 2em auto;
+
+            .footer-icons {
+                display: inline;
+                margin-right: 0.3em;
+            }
+        }
+    }
+
+    .footer-socialmedia {
+        display: flex;
+        width: 80vw;
+        justify-content: space-evenly;
+        margin: 1.3em auto;
+
+        .footer-icons {
+            display: flex;
+            margin-right: 0.3em;
+            background-color: $color2;
+            padding: 0.5rem;
+            border-radius: 100%;
+        }
+
+        @include devices(dekstop) {
+            width: 30vw;
+            margin: 2em auto;
+            font-size: 2em;
+        }
+    }
+}

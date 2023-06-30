@@ -1,0 +1,73 @@
+@import "../../../BaseStyles/base";
+
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(91, 112, 131, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+
+    .form-login {
+        width: 70%;
+        height: 50%;
+        background-color: $color3;
+        border-radius: 5px;
+        position: relative;
+        color: $color1;
+
+        .form-header {
+            width: 100%;
+            height: 30%;
+            text-align: center;
+            background-color: $color1;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: bold;
+            color: $color3;
+        }
+
+        .login-form-body {
+            display: flex;
+            width: 100%;
+            height: 60%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1em;
+
+            .login-field {
+                margin: 1em 0;
+                width: 80%;
+                height: 10%;
+                border-radius: 5px;
+                background-color: $color5;
+                padding: 0.5em 0.5em;
+            }
+            .btn-login {
+                margin-top: 1em;
+                width: 70%;
+                height: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1em;
+                border: none;
+                background-color: $color2;
+                color: $color3;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+        }
+        @include devices(dekstop) {
+            width: 30%;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import "../../../BaseStyles/base";
+
+.profile-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(91, 112, 131, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+
+    .profile-body {
+        background-color: $color1;
+        width: 70%;
+        height: 50%;
+        position: relative;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+
+        .profile-content {
+            text-align: center;
+
+            p {
+                font-size: 1.2em;
+                font-weight: bold;
+                margin: 1em 0;
+            }
+        }
+
+        .logout-button {
+            width: 80%;
+        }
+        @include devices(dekstop) {
+            width: 30%;
+        }
+    }
+}

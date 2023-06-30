@@ -1,0 +1,88 @@
+@import "../../../BaseStyles/base";
+
+.project-detail-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(91, 112, 131, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+
+    .project-detail-body {
+        width: 90%;
+        height: 70%;
+        background-color: $color5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        white-space: pre-wrap;
+        position: relative;
+
+        @include devices(tablet) {
+            width: 50%;
+        }
+
+        @include devices(dekstop) {
+            width: 50%;
+            height: 90%;
+        }
+
+        .image-container {
+            width: 100%;
+            height: 35%;
+
+            @include devices(dekstop) {
+                height: 50%;
+            }
+
+            div {
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    object-fit: fill;
+                }
+            }
+        }
+
+        .detail {
+            width: 90%;
+            height: 65%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            h1 {
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+
+            .description {
+                width: 100%;
+                height: 30%;
+                text-align: justify;
+                overflow-y: scroll;
+
+                word-wrap: break-word;
+            }
+
+            .btn-link-container {
+                display: flex;
+                justify-content: space-between;
+                width: 50%;
+
+                // .button {
+                //     width: 50%;
+                // }
+            }
+        }
+    }
+}

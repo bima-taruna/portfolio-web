@@ -1,0 +1,14 @@
+@import "../../../BaseStyles/base";
+
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 2%;
+    border: none;
+    background-color: transparent;
+    color: $color4;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 100;
+}

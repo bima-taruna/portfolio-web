@@ -1,0 +1,128 @@
+@import "../../../BaseStyles/base";
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $color2;
+    width: 90%;
+
+    margin: 1em auto;
+    padding: 0.5em 0;
+    border-radius: 0.9em;
+
+    @include devices(tablet) {
+        width: 50%;
+    }
+
+    @include devices(dekstop) {
+        background-color: transparent;
+        justify-content: flex-start;
+        border-radius: 0;
+        height: 100%;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        label {
+            display: block;
+            text-align: center;
+            margin: 0.5em 0;
+
+            @include devices(dekstop) {
+                margin: 1em 0;
+            }
+        }
+        #contact-name,
+        #contact-email,
+        #contact-message {
+            padding: 0.3em;
+            font-size: 1em;
+            background-color: $color3;
+            color: black;
+            border: none;
+            border-radius: 0.5em;
+            resize: none;
+
+            @include devices(dekstop) {
+                background-color: $color2;
+                color: $color3;
+            }
+        }
+
+        .message-container {
+            @include devices(dekstop) {
+                width: 77% !important;
+                height: 100%;
+
+                #contact-message {
+                    width: 100%;
+                    height: 30vh;
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+        .naming-input {
+            @include devices(dekstop) {
+                display: flex;
+                width: 90%;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+        }
+
+        @include devices(dekstop) {
+            label {
+                text-align: left;
+            }
+        }
+    }
+
+    .confirm-message {
+        display: flex;
+        justify-content: center;
+        margin-top: 0.5em;
+        color: $color4;
+    }
+
+    .button {
+        width: 90%;
+        margin: 0 auto;
+        cursor: none;
+        .submit-button {
+            cursor: pointer;
+            width: 100%;
+            padding: 0.5em;
+            margin: 1em auto;
+            border: 1px solid $color1;
+            background-color: $color1;
+            color: $color5;
+            border-radius: 0.3em;
+            transition: all 1s ease;
+
+            &:active {
+                background-color: $color3;
+                color: $color1;
+            }
+        }
+
+        @include devices(dekstop) {
+            width: 20%;
+            margin: 0;
+            margin-left: 15%;
+            .submit-button {
+                background-color: $color2;
+                width: 100%;
+
+                &:hover {
+                    background-color: $color3;
+                    color: $color1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+@import "../../../BaseStyles/base";
+
+.project-form {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(91, 112, 131, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+
+    .project-form-container {
+        width: 80%;
+        height: 50%;
+        background-color: white;
+        border-radius: 5px;
+        position: relative;
+        color: $color1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        white-space: pre-wrap;
+
+        @include devices(dekstop) {
+            width: 40%;
+            height: 60%;
+        }
+
+        .form-header {
+            width: 100%;
+            height: 20%;
+            text-align: center;
+            background-color: $color1;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: $color5;
+        }
+
+        .form-project-body {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: 100%;
+            padding: 1.2em;
+            justify-content: space-between;
+
+            .upload-container {
+                width: 100%;
+                height: 15%;
+                border: 1px dashed black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .upload {
+                    display: none;
+                }
+            }
+
+            input {
+                height: 10%;
+            }
+
+            textarea {
+                resize: none;
+                height: 15%;
+            }
+
+            .button-container {
+                width: 100%;
+            }
+        }
+    }
+}

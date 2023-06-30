@@ -1,0 +1,73 @@
+@import "../../../BaseStyles/base";
+
+.project-body {
+    width: 80%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 1em;
+    margin: 1em auto;
+    padding: 1em 1em;
+    position: relative;
+
+    // @media (hover: hover) and (pointer: fine) {
+    //     &:hover {
+    //         img {
+    //             opacity: 0.5;
+    //             transition: opacity 0.5s ease;
+    //         }
+
+    //         .button-container {
+    //             display: flex;
+    //             transition: display 0.5s ease;
+    //         }
+    //     }
+    // }
+
+    // @media (hover: none) {
+    //     &:focus {
+    //         img {
+    //             opacity: 0.5;
+    //             transition: opacity 0.5s ease;
+    //         }
+
+    //         .button-container {
+    //             display: flex;
+    //             transition: display 0.5s ease;
+    //         }
+    //     }
+    // }
+
+    img {
+        display: inline;
+        width: 100%;
+        height: 100%;
+    }
+
+    .button-container {
+        position: absolute;
+        top: 10%;
+        right: 3%;
+        display: flex;
+        justify-content: space-evenly;
+        width: 30%;
+
+        .edit-button {
+            font-size: 1.5em;
+            border-radius: 5px;
+            background-color: $color1;
+            cursor: pointer;
+            padding: 0.2em;
+            a {
+                color: white;
+            }
+        }
+        .delete-button {
+            font-size: 1.5em;
+            border-radius: 5px;
+            padding: 0.2em;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}

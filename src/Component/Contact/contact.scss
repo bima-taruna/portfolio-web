@@ -1,0 +1,81 @@
+@import "../../BaseStyles/base";
+
+.contact {
+    width: 100vw;
+    height: 100vh;
+    background-color: $color1;
+    scroll-snap-align: start;
+    color: $color5;
+    position: relative;
+
+    .border-left {
+        border-left: 1px solid rgba(255, 255, 255, 0.253);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        bottom: 0;
+        z-index: 1;
+
+        @include devices(dekstop) {
+            left: 30%;
+        }
+
+        @include devices(tablet) {
+            left: 30%;
+        }
+    }
+
+    .header {
+        font-size: 1.7em;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 1em;
+
+        @include devices(dekstop) {
+            font-size: 2em;
+        }
+    }
+
+    .contact-body {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5em auto;
+
+        @include devices(dekstop) {
+            flex-direction: row;
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1em;
+            .info-header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+
+            ul {
+                margin-top: 1em;
+                padding: 0 2em;
+                text-align: justify;
+                font-size: 1.1em;
+
+                li {
+                    margin: 1em 0;
+                }
+            }
+        }
+
+        .form {
+            @include devices(dekstop) {
+                margin: 5vh auto;
+                width: 60%;
+                height: 50vh;
+            }
+        }
+    }
+}
