@@ -114,7 +114,7 @@ const Project: React.FC<otherRef> = React.forwardRef((props, ref: any) => {
           {data?.length != undefined && data.length > 0 ? (
             <Slider {...settings}>
               {data?.map((item, id) => (
-                <>
+                <React.Fragment key={item.id}>
                   <ProjectCard
                     key={item.id}
                     image={item.images}
@@ -144,7 +144,7 @@ const Project: React.FC<otherRef> = React.forwardRef((props, ref: any) => {
                       />
                     </div>
                   </Link>
-                </>
+                </React.Fragment>
               ))}
             </Slider>
           ) : loading ? (
