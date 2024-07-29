@@ -18,26 +18,26 @@ const Footer: React.FC = () => {
         <HashLink to="#home" smooth>
           <div className="footer-icons">
             <AiOutlineHome />
+            Home
           </div>
-          Home
         </HashLink>
         <HashLink to="#about" smooth>
           <div className="footer-icons">
             <AiOutlineUser />
+            About
           </div>
-          About
         </HashLink>
         <HashLink to="#project" smooth>
           <div className="footer-icons">
             <AiOutlineAppstore />
+            Project
           </div>
-          Project
         </HashLink>
         <HashLink to="#contact" smooth>
           <div className="footer-icons">
             <BsTelephone />
+            Contact
           </div>
-          Contact
         </HashLink>
       </ul>
       <ul className="footer-socialmedia">
