@@ -29,13 +29,15 @@ const About: React.FC<otherRef> = React.forwardRef(
             About <span>me</span>
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-            ex amet ipsa sequi nulla possimus sunt porro, provident in vero
-            commodi quibusdam obcaecati! Sapiente quisquam reiciendis aliquam
-            vel atque facere? Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Quod non eum dolores saepe sunt ducimus numquam
-            alias fugit nisi sint. Similique quidem velit, explicabo iure
-            consectetur vel illo laboriosam beatae.
+            Hello! My Name is Bima, I'm Software Engineer that specialize in web
+            development using React.js, TypeScript, and JavaScript, as well as
+            Android app development with Kotlin. My passion lies in creating
+            efficient, user-friendly applications that solve real-world
+            problems. Currently, I am focusing and continuously learning and
+            adapting to new technologies and industry trends. Whether it's
+            building responsive web interfaces or developing robust mobile
+            applications, I thrive on the challenge of bringing innovative ideas
+            to life.
           </p>
         </section>
         <section className="gambar">
