@@ -10,6 +10,7 @@ import {
 } from "react-icons/ai";
 import { BsTelephone } from "react-icons/bs";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
@@ -41,21 +42,30 @@ const Footer: React.FC = () => {
         </HashLink>
       </ul>
       <ul className="footer-socialmedia">
-        <li>
-          <div className="footer-icons">
-            <AiOutlineInstagram />
-          </div>
-        </li>
-        <li>
-          <div className="footer-icons">
-            <AiOutlineGithub />
-          </div>
-        </li>
-        <li>
-          <div className="footer-icons">
-            <AiOutlineLinkedin />
-          </div>
-        </li>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/bim_tar/"
+          rel="noopener noreferrer"
+          className="footer-icons"
+        >
+          <AiOutlineInstagram />
+        </a>
+        <a
+          target="_blank"
+          href="https://github.com/bima-taruna"
+          rel="noopener noreferrer"
+          className="footer-icons"
+        >
+          <AiOutlineGithub />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/bima-taruna/"
+          rel="noopener noreferrer"
+          className="footer-icons"
+        >
+          <AiOutlineLinkedin />
+        </a>
       </ul>
       <h1>Design Inspired By : SaulDesign</h1>
     </footer>
