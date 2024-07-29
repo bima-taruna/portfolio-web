@@ -1,145 +1,148 @@
 @import "../../BaseStyles/base";
 
 header {
-    width: 100vw;
-    height: 100vh !important;
-    background-color: $color1;
-    scroll-snap-align: start;
-    color: $color5;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    // padding-top: 4rem;
+  width: 100vw;
+  height: 100vh !important;
+  background-color: $color1;
+  scroll-snap-align: start;
+  color: $color5;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  // padding-top: 4rem;
+
+  @include devices(dekstop) {
+    flex-direction: row;
+    // padding-top: 6rem;
+  }
+
+  .border-left {
+    border-left: 1px solid rgba(255, 255, 255, 0.253);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    z-index: 0;
 
     @include devices(dekstop) {
-        flex-direction: row;
-        // padding-top: 6rem;
+      left: 30%;
     }
 
-    .border-left {
-        border-left: 1px solid rgba(255, 255, 255, 0.253);
-        position: absolute;
-        top: 0;
-        left: 50%;
-        bottom: 0;
-        z-index: 0;
+    @include devices(tablet) {
+      left: 30%;
+    }
+  }
 
-        @include devices(dekstop) {
-            left: 30%;
-        }
+  .title {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
 
-        @include devices(tablet) {
-            left: 30%;
-        }
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: $color3;
     }
 
-    .title {
-        width: 100%;
-        height: 40%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+    .button-container {
+      width: 75%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3em;
+
+      .cv-button,
+      .contact-button {
+        width: 40%;
+      }
+
+      @include devices(tablet) {
+        width: 50%;
+      }
+
+      @include devices(dekstop) {
+        width: 80%;
         justify-content: center;
-        position: relative;
-        z-index: 2;
-
-        h1 {
-            font-size: 3rem;
-            font-weight: bold;
-            color: $color3;
-        }
-
-        .button-container {
-            width: 75%;
-            display: flex;
-            justify-content: space-between;
-            margin-top: 3em;
-
-            .cv-button,
-            .contact-button {
-                width: 40%;
-            }
-
-            @include devices(tablet) {
-                width: 50%;
-            }
-
-            @include devices(dekstop) {
-                width: 80%;
-                align-self: flex-start;
-            }
-        }
-        @include devices(dekstop) {
-            width: 50%;
-            margin-top: 10%;
-            padding-left: 8rem;
-            h1 {
-                font-size: 6rem;
-                text-align: left;
-            }
-        }
-
-        @include devices(tablet) {
-            h1 {
-                font-size: 4rem;
-                text-align: center;
-                padding: 0 7rem;
-            }
-        }
+        padding-left: 3rem;
+        gap: 3rem;
+        align-self: flex-start;
+      }
+    }
+    @include devices(dekstop) {
+      width: 50%;
+      margin-top: 10%;
+      padding-left: 8rem;
+      h1 {
+        font-size: 4.5rem;
+        text-align: left;
+      }
     }
 
-    .gambar {
-        width: 100%;
-        height: 60%;
-        position: relative;
-        z-index: 2;
-        img {
-            width: 70%;
-            height: 60%;
-            position: relative;
-        }
+    @include devices(tablet) {
+      h1 {
+        font-size: 4rem;
+        text-align: center;
+        padding: 0 7rem;
+      }
+    }
+  }
 
-        @include devices(dekstop) {
-            height: 100%;
-            width: 50%;
-
-            img {
-                margin-top: 10%;
-                width: 80%;
-            }
-        }
-
-        @include devices(tablet) {
-            img {
-                width: 40%;
-            }
-        }
+  .gambar {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    z-index: 2;
+    img {
+      width: 70%;
+      height: 60%;
+      position: relative;
     }
 
-    .next-button {
-        position: relative;
-        bottom: 15%;
-        font-size: 3rem;
-        z-index: 2;
-        cursor: pointer;
-        background-color: transparent;
-        height: 3rem;
-        border-radius: 0.2em;
-        align-self: center;
+    @include devices(dekstop) {
+      height: 100%;
+      width: 50%;
 
-        @include devices(dekstop) {
-            font-size: 4rem;
-            position: absolute;
-            left: calc(25% + 2.3rem);
-            bottom: 20%;
-            height: 4rem;
-        }
-
-        @include devices(tablet) {
-            font-size: 4rem;
-            height: 4rem;
-        }
+      img {
+        margin-top: 10%;
+        width: 80%;
+      }
     }
+
+    @include devices(tablet) {
+      img {
+        width: 40%;
+      }
+    }
+  }
+
+  .next-button {
+    position: relative;
+    bottom: 15%;
+    font-size: 3rem;
+    z-index: 2;
+    cursor: pointer;
+    background-color: transparent;
+    height: 3rem;
+    border-radius: 0.2em;
+    align-self: center;
+
+    @include devices(dekstop) {
+      font-size: 4rem;
+      position: absolute;
+      left: calc(25% + 2.3rem);
+      bottom: 20%;
+      height: 4rem;
+    }
+
+    @include devices(tablet) {
+      font-size: 4rem;
+      height: 4rem;
+    }
+  }
 }

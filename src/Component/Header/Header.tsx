@@ -33,7 +33,7 @@ const Header: React.FC<MyRef> = ({ resultRef }: any) => {
         transition={{ delay: 2.5, duration: 1 }}
         className="title"
       >
-        <h1>SOFTWARE DEVELOPER</h1>
+        <h1>Software Engineer</h1>
         <section className="button-container">
           <div className="contact-button">
             <Button
