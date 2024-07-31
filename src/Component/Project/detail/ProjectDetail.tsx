@@ -54,7 +54,6 @@ const ProjectDetail: React.FC = () => {
                 {data?.images.map((item: any, id: number) => (
                   <img src={item} alt="project-image" key={id} />
                 ))}
-                {/* <img src={data?.images[0]} alt="contoh" /> */}
               </Slider>
             </div>
             <section className="detail">

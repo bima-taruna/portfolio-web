@@ -37,9 +37,6 @@ const Login: React.FC = () => {
   return (
     <section className="login-container">
       <section className="form-login">
-        {/* <button className="btn-close" onClick={() => navigate("/")}>
-          X
-        </button> */}
         <CloseButton />
         <section className="form-header">
           <h1>SIGN IN</h1>
@@ -68,7 +65,6 @@ const Login: React.FC = () => {
               {errors.username && touched.username && (
                 <div>{errors.username}</div>
               )}
-
               <Field
                 name="password"
                 type="password"
@@ -83,6 +79,7 @@ const Login: React.FC = () => {
               <button className="btn-login" type="submit">
                 Submit
               </button>
+              {message ? message : ""}
             </Form>
           )}
         </Formik>

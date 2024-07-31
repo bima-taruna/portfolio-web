@@ -1,4 +1,3 @@
-import React from "react";
 import { BsArrowDownSquare } from "react-icons/bs";
 import { motion } from "framer-motion";
 type Props = {};

@@ -8,7 +8,6 @@ import { Link, useLocation } from "react-router-dom";
 import NavBarData from "./NavBarData";
 import { HashLink } from "react-router-hash-link";
 import { useAppSelector, useAppDispatch } from "../../services/hooks";
-// import logo from "../../logo/logo.png";
 
 const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);

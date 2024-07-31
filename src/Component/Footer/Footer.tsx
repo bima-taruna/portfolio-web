@@ -10,7 +10,6 @@ import {
 } from "react-icons/ai";
 import { BsTelephone } from "react-icons/bs";
 import { HashLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (

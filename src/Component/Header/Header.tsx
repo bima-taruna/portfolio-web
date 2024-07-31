@@ -4,9 +4,7 @@ import { motion } from "framer-motion";
 import asset1 from "../../assets/asset2.png";
 import Button from "../Shared/Button/Button";
 import Square from "../Shared/Square Button/Square";
-import jwt from "jwt-decode";
 import { MyRef } from "../Main/Main";
-import { useAppSelector, useAppDispatch } from "../../services/hooks";
 
 interface UserData {
   isAdmin: boolean;
