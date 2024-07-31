@@ -7,7 +7,6 @@ import AddProject from "./Component/User/AddProject/AddProject";
 import ProjectDetail from "./Component/Project/detail/ProjectDetail";
 import { logout } from "../src/actions/auth";
 import { useAppSelector, useAppDispatch } from "../src/services/hooks";
-import { useNavigate } from "react-router-dom";
 import { Routes, Route, useLocation } from "react-router-dom";
 import jwt from "jwt-decode";
 import { ProfileType } from "./Component/User/Profile/Profile";
@@ -16,9 +15,6 @@ const App: React.FC = () => {
   const location = useLocation();
   const background = location.state && location.state.background;
   const dispatch = useAppDispatch();
-  // const navigate = useNavigate();
-  // const goToAbout = React.useRef<HTMLDivElement>(null);
-  // const goToProject = React.useRef<HTMLDivElement>(null);
   const currentUser = useAppSelector((state) => state.auth.user);
 
   const signOut = React.useCallback(() => {

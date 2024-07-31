@@ -7,7 +7,6 @@ import {
     SET_MESSAGE,
   } from "./types";
 
-  import axios from "axios";
 
   import { UserProps,LoginProps } from "../services/authServices";
   

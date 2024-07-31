@@ -30,7 +30,6 @@ function Profile() {
     if (currentUser) {
       let decoded: ProfileType = jwt(currentUser);
       setProfile(decoded);
-      console.log(decoded);
     }
   }, []);
 

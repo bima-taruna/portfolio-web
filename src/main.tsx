@@ -1,7 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Main from "./Component/Main/Main";
-import Navbar from "../src/Component/Navbar/Navbar";
 import App from "./App";
 import { HashRouter } from "react-router-dom";
 import store from "./store";

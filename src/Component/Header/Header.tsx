@@ -5,10 +5,7 @@ import asset1 from "../../assets/asset2.png";
 import Button from "../Shared/Button/Button";
 import Square from "../Shared/Square Button/Square";
 import { MyRef } from "../Main/Main";
-
-interface UserData {
-  isAdmin: boolean;
-}
+import { HashLink } from "react-router-hash-link";
 
 const Header: React.FC<MyRef> = ({ resultRef }: any) => {
   const squareButton = React.useRef<HTMLDivElement>(null);
@@ -34,14 +31,16 @@ const Header: React.FC<MyRef> = ({ resultRef }: any) => {
         <h1>Software Engineer</h1>
         <section className="button-container">
           <div className="contact-button">
-            <Button
-              text="Contact Me"
-              textColor="white"
-              backgroundColor="#3f5278"
-              border="#0a2647"
-              textSize="1.1em"
-              hoverColor="#2c74b3"
-            />
+            <HashLink to="#contact">
+              <Button
+                text="Contact Me"
+                textColor="white"
+                backgroundColor="#3f5278"
+                border="#0a2647"
+                textSize="1.1em"
+                hoverColor="#2c74b3"
+              />
+            </HashLink>
           </div>
           <div className="cv-button">
             <Button
