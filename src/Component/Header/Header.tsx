@@ -6,6 +6,7 @@ import Button from "../Shared/Button/Button";
 import Square from "../Shared/Square Button/Square";
 import { MyRef } from "../Main/Main";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const Header: React.FC<MyRef> = ({ resultRef }: any) => {
   const squareButton = React.useRef<HTMLDivElement>(null);
@@ -43,14 +44,19 @@ const Header: React.FC<MyRef> = ({ resultRef }: any) => {
             </HashLink>
           </div>
           <div className="cv-button">
-            <Button
-              text="My CV"
-              textColor="white"
-              backgroundColor="#3f5278"
-              border="#0a2647"
-              textSize="1.1em"
-              hoverColor="#2c74b3"
-            />
+            <a
+              href="https://drive.google.com/file/d/1POPvHzf0q5G_RJ9sYlAhX_gF2HisYNWF/view?usp=sharing"
+              target="_blank"
+            >
+              <Button
+                text="My CV"
+                textColor="white"
+                backgroundColor="#3f5278"
+                border="#0a2647"
+                textSize="1.1em"
+                hoverColor="#2c74b3"
+              />
+            </a>
           </div>
         </section>
       </motion.section>
